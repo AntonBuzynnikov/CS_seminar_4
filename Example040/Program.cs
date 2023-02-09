@@ -6,10 +6,11 @@ int length = Int32.Parse(System.Console.ReadLine());
 void CreateArray(int x)
 {
     int[] array = new int[x];
-    System.Console.WriteLine("Вводите элементы массива"); 
+    //System.Console.WriteLine("Вводите элементы массива"); 
     for(int i = 0; i < x; i++)
     {
-        array[i] = Int32.Parse(System.Console.ReadLine());
+        Random N = new Random();
+        array[i] = N.Next(-10,10);
         
     }
     System.Console.Write("Массив: ");
