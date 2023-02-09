@@ -10,7 +10,7 @@ void CreateArray(int x)
     Random N = new Random();
     for(int i = 0; i < x; i++)
     {
-        array[i] = N.Next(-9,9);
+        array[i] = N.Next(-9,10);
     }
     System.Console.Write("Массив: ");
     for(int i = 0; i < x; i++)
@@ -26,7 +26,7 @@ void CreateArray(int x)
         if(array[i] < 0) sumNegative+=array[i];
     }
     System.Console.WriteLine($"Сумма положительных чисел: {sumPositive}");
-    System.Console.WriteLine($"Сумма отрицательных чисел: {Math.Abs(sumNegative)}");
+    System.Console.WriteLine($"Сумма отрицательных чисел: {sumNegative}");
 }
 
 CreateArray(length);
